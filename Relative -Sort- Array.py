@@ -15,8 +15,7 @@ class Solution(object):
             count[arr1[k]]=count[arr1[k]]+1
    
         for val in  arr2:
-            if val in arr1:
-                left +=[val]*count[val]
+            left +=[val]*count[val]
         for val in arr1:
             if val not in arr2 and val not in right:
                 right +=[val]*count[val]
